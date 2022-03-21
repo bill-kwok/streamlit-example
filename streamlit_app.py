@@ -10,6 +10,9 @@ st.text(int(num1)+int(num2))
 
 click = st.button("Start")
 if click:
-  with st.spinner('Wait for it...'):
-    time.sleep(5)
+  x = 5
+  for i in range(5):
+    with st.spinner('{x}'):
+      time.sleep(1)
+    x -= 1
   st.success('Done!')
