@@ -12,7 +12,7 @@ click = st.button("Start")
 if click:
   x = 5
   for i in range(5):
-    with st.spinner('{x}'):
+    with st.spinner(f'{x}'):
       time.sleep(1)
     x -= 1
   st.success('Done!')
