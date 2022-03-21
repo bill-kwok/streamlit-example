@@ -7,6 +7,8 @@ num1 = st.text_input("First number: ")
 num2 = st.text_input("Second number: ")
 st.text(int(num1)+int(num2))
 
-click = st.button("Snow")
+click = st.button("Start")
 if click:
-  st.snow()
+  with st.spinner('Wait for it...'):
+    time.sleep(5)
+  st.success('Done!')
